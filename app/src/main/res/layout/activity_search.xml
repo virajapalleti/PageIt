@@ -6,21 +6,83 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:rotationX="-4"
-    tools:context=".SearchActivity">
+    tools:context=".SearchActivity"
+    android:background="#FFECE3">
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="PageIt"
+        android:textColor="#0F0B0B"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For Easy Access on Your Fingertips"
+        android:textColor="#090808"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="373dp"
+        android:layout_height="294dp"
+        android:background="@null"
+        app:cardElevation="4dp"
+        app:srcCompat="@drawable/group_1"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="47dp"
+        android:layout_margin="16dp"
+        android:rotationX="4"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="4dp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="397dp">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="166dp"
+            android:layout_height="match_parent"
+            android:text="   Topic"
+            android:textSize="34sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Recommended Topics:"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="486dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="574dp"/>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="345dp"
+        android:layout_width="46dp"
         android:layout_height="46dp"
-        android:text="Search"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="329dp" />
+        android:background="#FFFDFD"
+        tools:layout_editor_absoluteX="332dp"
+        app:cardElevation="4dp"
+        tools:layout_editor_absoluteY="25dp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="?android:attr/actionModeWebSearchDrawable"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="342dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
