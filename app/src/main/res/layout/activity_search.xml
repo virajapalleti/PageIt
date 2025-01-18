@@ -38,8 +38,8 @@
         android:background="@null"
         app:cardElevation="4dp"
         app:srcCompat="@drawable/group_1"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="93dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="103dp" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="360dp"
