@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.PageIt" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="RalewayText" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/raleway</item>
+    </style>
+    <style name="Theme.PageIt" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textViewStyle">@style/RalewayText</item>
+    </style>
 </resources>

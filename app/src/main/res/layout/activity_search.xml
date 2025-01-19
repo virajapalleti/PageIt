@@ -5,21 +5,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:rotationX="-4"
-    tools:context=".SearchActivity"
-    android:background="#FFECE3">
+    android:background="#FFECE3"
+    tools:context=".SearchActivity">
 
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/raleway"
         android:text="PageIt"
         android:textColor="#0F0B0B"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="27dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView16"
@@ -28,61 +29,33 @@
         android:text="For Easy Access on Your Fingertips"
         android:textColor="#090808"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="72dp" />
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/imageButton7"
-        android:layout_width="373dp"
-        android:layout_height="294dp"
-        android:background="@null"
+        android:layout_width="217dp"
+        android:layout_height="171dp"
         app:cardElevation="4dp"
-        app:srcCompat="@drawable/group_1"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="103dp" />
+        app:layout_constraintBottom_toTopOf="@+id/enterTopic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:srcCompat="@drawable/group_1" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="360dp"
-        android:layout_height="47dp"
-        android:layout_margin="16dp"
-        android:rotationX="4"
-        app:cardBackgroundColor="#FFFFFF"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="4dp"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="397dp">
-
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="166dp"
-            android:layout_height="match_parent"
-            android:text="   Topic"
-            android:textSize="34sp" />
-    </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/enterTopic"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="Recommended Topics:"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="486dp" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="574dp"/>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="46dp"
-        android:layout_height="46dp"
-        android:background="#FFFDFD"
-        tools:layout_editor_absoluteX="332dp"
-        app:cardElevation="4dp"
-        tools:layout_editor_absoluteY="25dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:fontFamily="@font/raleway"
+        android:hint="Topic"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

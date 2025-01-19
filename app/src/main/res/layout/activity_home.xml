@@ -5,26 +5,42 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFECE3"
     tools:context=".HomeActivity">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_button"
-        android:backgroundTint="#FFECE3"
-        android:text="View History"
-        tools:layout_editor_absoluteX="274dp"
-        tools:layout_editor_absoluteY="37dp" />
-
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/backBtn"
         android:layout_width="43dp"
         android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_button"
         android:backgroundTint="#FFECE3"
-        app:srcCompat="@android:drawable/ic_menu_revert"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="40dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/topicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/backBtn"
+        app:layout_constraintTop_toBottomOf="@+id/backBtn" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/topicName"
+        app:layout_constraintTop_toBottomOf="@+id/topicName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
